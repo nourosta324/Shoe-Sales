@@ -44,7 +44,7 @@ run;
 ** Creating the Visuals ** 
 
 
-1. Total Sales by Region
+1. Total Sales by Region (https://github.com/nourosta324/Shoe-Sales/blob/main/Screen%20Shot%202025-05-06%20at%208.38.40%20AM.png) 
 
 A bar chart is created to show total sales by region.
 /* Creating a bar chart of sales by region */
@@ -53,7 +53,7 @@ proc sgplot data=region_summary;
    title 'Total Sales by Region';
 run;
 
-2. Total Stores by Region
+2. Total Stores by Region (https://github.com/nourosta324/Shoe-Sales/blob/main/Screen%20Shot%202025-05-06%20at%208.40.33%20AM.png) 
 
 Another bar chart shows the total number of stores by region.
 /* Creating a bar chart of stores by region */
@@ -62,7 +62,7 @@ proc sgplot data=region_summary;
    title 'Total Stores by Region';
 run;
 
-3. Sales Distribution by Region
+3. Sales Distribution by Region (https://github.com/nourosta324/Shoe-Sales/blob/main/Screen%20Shot%202025-05-06%20at%204.00.38%20PM.png)
 
 A pie chart visualizes the distribution of sales across regions.
 /* Creating a Pie Chart of Sales Distribution by Region */
@@ -71,7 +71,7 @@ proc gchart data=region_summary;
    title 'Sales Distribution by Region';
 run;
 
-4. Average Sales per Store by Region
+4. Average Sales per Store by Region 
 
 This bar chart shows the average sales per store by region.
 /* Showing the average sales per store by region */
@@ -87,14 +87,14 @@ run;
 
 Statistical Analysis
 
-5. Correlation between Sales and Stores
+5. Correlation between Sales and Stores (https://github.com/nourosta324/Shoe-Sales/blob/main/Screen%20Shot%202025-05-06%20at%209.10.40%20AM.png)
 
 The CORR procedure is used to test if there is a correlation between the number of stores and total sales.
 /* Showing if there's a correlation between the number of stores and sales */
 proc corr data=region_summary;
    var SumSales SumStores;
 run;
-6. Visualization of the Relationship
+6. Visualization of the Relationship (https://github.com/nourosta324/Shoe-Sales/blob/main/Screen%20Shot%202025-05-06%20at%209.10.27%20AM.png)
 
 A scatter plot with a regression line is created to visualize the relationship between the log-transformed sales and stores.
 /* Visualizing the relationship with log-transformation */
@@ -111,7 +111,7 @@ proc sgplot data=region_log;
 run;
 
 
-# **Conclusion**
+## Conclusion 
 
 This project demonstrates the process of cleaning, analyzing, and visualizing sales data from a shoes dataset using SAS. The key steps included:
 
